@@ -9,7 +9,7 @@ echo [1/3] Starting to clone repositories from GitHub...
 echo -----------------------------------------------------------
 
 :: List of repositories based on your screenshot
-set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop
+set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop ZG-Tools
 
 for %%r in (%repos%) do (
     if exist "%%r" (
