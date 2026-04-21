@@ -9,7 +9,7 @@ echo [1/3] Starting to clone repositories from GitHub...
 echo -----------------------------------------------------------
 
 :: List of repositories based on your screenshot
-set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop ZG-Tools
+set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop ZG-Tools searxng
 
 for %%r in (%repos%) do (
     if exist "%%r" (
@@ -21,7 +21,7 @@ for %%r in (%repos%) do (
 )
 
 echo.
-echo [2/3] Starting to clone Python repository from Hugging Face...
+echo [2/3] Starting to clone Python repositories from Hugging Face...
 echo -----------------------------------------------------------
 
 if exist "python" (
