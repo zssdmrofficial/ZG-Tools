@@ -8,7 +8,7 @@ set HF_SPACE_REPO=https://huggingface.co/spaces/ZSSDMR/space
 echo [1/4] Starting to clone repositories from GitHub...
 echo -----------------------------------------------------------
 
-set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop ZG-Tools searxng
+set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io space.zssdmrofficial.github.io ZG-Desktop ZG-Tools searxng
 
 for %%r in (%repos%) do (
     if exist "%%r" (
