@@ -1,14 +1,13 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-:: Set GitHub Organization and Hugging Face URL
 set GITHUB_ORG=zssdmrofficial
 set HF_PYTHON_REPO=https://huggingface.co/spaces/ZSSDMR/python
+set HF_SPACE_REPO=https://huggingface.co/spaces/ZSSDMR/space
 
-echo [1/3] Starting to clone repositories from GitHub...
+echo [1/4] Starting to clone repositories from GitHub...
 echo -----------------------------------------------------------
 
-:: List of repositories based on your screenshot
 set repos=zssdmrofficial.github.io ussr.zssdmrofficial.github.io pinball.zssdmrofficial.github.io chat.zssdmrofficial.github.io chatgtp.zssdmrofficial.github.io law.zssdmrofficial.github.io ZG-Desktop ZG-Tools searxng
 
 for %%r in (%repos%) do (
@@ -21,7 +20,7 @@ for %%r in (%repos%) do (
 )
 
 echo.
-echo [2/3] Starting to clone Python repositories from Hugging Face...
+echo [2/4] Starting to clone Python repositories from Hugging Face...
 echo -----------------------------------------------------------
 
 if exist "python" (
@@ -32,7 +31,18 @@ if exist "python" (
 )
 
 echo.
-echo [3/3] Building ZG-Desktop project...
+echo [3/4] Starting to clone space repositories from Hugging Face...
+echo -----------------------------------------------------------
+
+if exist "space" (
+    echo [SKIP] Folder "space" already exists.
+) else (
+    echo [EXEC] Cloning space project from Hugging Face...
+    git clone %HF_SPACE_REPO%
+)
+
+echo.
+echo [4/4] Building ZG-Desktop project...
 echo -----------------------------------------------------------
 
 if exist "ZG-Desktop" (
